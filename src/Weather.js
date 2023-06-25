@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import GitHubLink from "./GitHubLink";
 
 export default function Weather() {
   let [city, setCity] = useState("");
@@ -35,6 +36,14 @@ export default function Weather() {
         onChange={searchCity}
       />
       <input type="submit" />
+      <br />
+      <br />
+      <br />
+      <br />
+      <footer>
+        {" "}
+        <GitHubLink />;
+      </footer>
     </form>
   );
   if (loaded) {
