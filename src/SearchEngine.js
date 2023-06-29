@@ -28,13 +28,20 @@ export default function Weather() {
   }
   let form = (
     <form onSubmit={handleSubmit}>
-      <input
-        name="city"
-        type="text"
-        placeholder="search for a city"
-        onChange={searchCity}
-      />
-      <input type="submit" />
+      <div className="row">
+        <div className="col-9">
+          <input
+            className="form-control"
+            name="city"
+            type="text"
+            placeholder="Enter a city..."
+            onChange={searchCity}
+          />
+        </div>
+        <div className="col-3">
+          <input type="submit" className="btn btn-primary" />
+        </div>
+      </div>
     </form>
   );
   if (loaded) {
