@@ -35,11 +35,12 @@ export default function Weather() {
             name="city"
             type="text"
             placeholder="Enter a city..."
+            autoFocus="on"
             onChange={searchCity}
           />
         </div>
         <div className="col-3">
-          <input type="submit" className="btn btn-primary" />
+          <input type="submit" className="btn btn-primary w-100 " />
         </div>
       </div>
     </form>
