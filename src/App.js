@@ -1,5 +1,5 @@
 import "./App.css";
-import GitHubLink from "./GitHubLink";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import Weather from "./Weather";
 function App() {
@@ -8,7 +8,15 @@ function App() {
       <div className="Container">
         <Weather />
         <footer>
-          <GitHubLink />
+          Coded by Tori Ernst and{" "}
+          <a
+            href="https://github.com/tori-noel/react-weather"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {" "}
+            Open Sourced on Github
+          </a>
         </footer>
       </div>
     </div>
