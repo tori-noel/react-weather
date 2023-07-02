@@ -16,11 +16,7 @@ export default function WeatherInfo(props) {
       <div className="row mt-3">
         <div className="col-6">
           <div className="clearfix">
-            <img
-              src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-              alt="mostly cloudy"
-              className="float-left"
-            />
+            <img src={props.data.iconUrl} alt="" className="float-left" />
 
             <span className="temperature">
               {Math.round(props.data.temperature)}
@@ -30,7 +26,6 @@ export default function WeatherInfo(props) {
         </div>
         <div className="col-6">
           <ul>
-            <li>Precipitation: {props.data.precipitation}</li>
             <li>Humidity: {props.data.humidity} </li>
             <li>Wind: {Math.round(props.data.wind)} </li>
           </ul>
