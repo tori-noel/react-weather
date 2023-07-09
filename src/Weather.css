@@ -3,12 +3,15 @@
   border-radius: 5px;
   padding: 16px;
   line-height: 29px;
+  box-shadow: rgba(97, 97, 153, 0.2) 0px 7px 29px 0px;
 }
 .Weather img {
+  height: 100px;
+  width: 100px;
+}
+.Weather .WeatherForecast-icon .icon {
   height: 64px;
   width: 64px;
-  display: inline-block;
-  margin: 0 auto;
 }
 .Weather h1 {
   margin: 20px 0 0 0;
