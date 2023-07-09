@@ -12,7 +12,7 @@ function App() {
           <a
             href="https://github.com/tori-noel/react-weather"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
             {" "}
             Open Sourced on Github
